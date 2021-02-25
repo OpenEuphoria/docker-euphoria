@@ -1,0 +1,4 @@
+FROM openeuphoria/euphoria
+LABEL maintainer="Greg Haberek <ghaberek@gmail.com>"
+ADD euphoria-mvc-1.13.0.tar.gz /usr/local/
+RUN sed -i 's@-i /usr/local/euphoria-4.1.0-Linux-x64/include@-i /usr/local/euphoria-4.1.0-Linux-x64/include\n-i /usr/local/euphoria-mvc-1.13.0/include@' /usr/local/euphoria-4.1.0-Linux-x64/bin/eu.cfg

@@ -1,0 +1,4 @@
+FROM debian
+LABEL maintainer="Greg Haberek <ghaberek@gmail.com>"
+ADD euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz /usr/local/
+ENV PATH=/usr/local/euphoria-4.1.0-Linux-x64/bin:$PATH

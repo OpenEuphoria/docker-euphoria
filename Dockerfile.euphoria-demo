@@ -1,0 +1,8 @@
+FROM openeuphoria/euphoria-mvc
+LABEL maintainer="Greg Haberek <ghaberek@gmail.com>"
+COPY demo /demo
+WORKDIR /demo
+EXPOSE 5000
+ENV SERVER_ADDR=0.0.0.0
+ENV SERVER_PORT=5000
+CMD ["eui","app.ex"]
